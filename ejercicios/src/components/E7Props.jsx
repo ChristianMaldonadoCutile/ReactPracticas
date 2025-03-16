@@ -3,7 +3,7 @@ import Child from './props/Child'
 import { useState } from 'react'
 
 function E7Props() {
-    {/*const text = "Variables desde el padre";
+  {/*const text = "Variables desde el padre";
     const person = {
         sex: "hombre",
         age: 20,
@@ -16,14 +16,14 @@ function E7Props() {
   )*/}
 
   const [displayName, setDisplayName] = useState("");
-  const login =(name) =>{
+  const login = (name) => {
     setDisplayName(name);
   }
-  return(
+  return (
     <div>
-        <h1>Props 1 Comuncacion hijo-padre</h1>
-        <h2>hola {displayName}</h2>
-        <Child></Child>
+      <h1>Props 1 Comuncacion hijo-padre</h1>
+      <h2>hola {displayName}</h2>
+      <Child handLogin={login}></Child>
     </div>
   )
 

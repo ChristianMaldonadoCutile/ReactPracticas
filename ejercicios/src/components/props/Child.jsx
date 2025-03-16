@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Child(props) {
-    const {msg, person} = props;
+    const [userName, setUserName] = useState("Christian");
+
+    const handLogin = () => {
+      props.handLogin(userName);
+    }
 
   return (
     <div>
-        <h2>Este es el componente hijo</h2>
-        <p>{msg}</p>
-        <div>
-            {person.sex} - {person.age}
-        </div>
+        <h2>Este es un componente hijo</h2>
+        <p>Nombre de usuario: {userName}</p>
+        <button onClick={handLogin}>Login</button>
     </div>
   )
 }

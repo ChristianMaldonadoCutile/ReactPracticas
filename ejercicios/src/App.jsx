@@ -6,6 +6,8 @@ import E5ListaRenderizada from './components/E5ListaRenderizada';
 import E6ListaObjetos from './components/E6ListaObjetos';
 import E7Props from './components/E7Props';
 import E8Formulario from './components/E8Formulario';
+import E9StateLift from './components/E9StateLift';
+import E10UseEffect from './components/E10UseEffect';
 
 function App() {
   return (
@@ -13,7 +15,14 @@ function App() {
     {/*<Ejercicio1></Ejercicio1>*/}
     <h1>Muestra del progreso</h1>
     {/*<E2Eventos></E2Eventos>*/}
-    <E8Formulario></E8Formulario>
+    {/*<E3UseState></E3UseState>*/}
+    {/*<E4UseStateAtributos></E4UseStateAtributos>*/}
+    {/*<E5ListaRenderizada></E5ListaRenderizada>*/}
+    {/*<E6ListaObjetos></E6ListaObjetos>*/}
+    {/*<E7Props></E7Props>*/}
+    {/*<E8Formulario></E8Formulario>*/}
+    {/*<E9StateLift></E9StateLift>*/}
+    <E10UseEffect></E10UseEffect>
     </>
   )
 }
